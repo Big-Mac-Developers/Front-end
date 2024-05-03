@@ -10,7 +10,9 @@ function App() {
 			<header className="flex items-center justify-between px-[12.5%] border-b py-3">
 				<nav className="flex items-center gap-6">
 					<Button size="icon" variant="ghost">
-						<KanbanIcon />
+						<Link to="/">
+							<KanbanIcon />
+						</Link>
 					</Button>
 					<Button variant="link" asChild>
 						<Link to="/leaderboard">Leaderboard</Link>
