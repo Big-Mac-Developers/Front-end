@@ -1,35 +1,11 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Kanban from "./pages/Kanban";
-import { KanbanIcon } from "lucide-react";
-import { Button } from "./components/ui/button";
-import { ModeToggle } from "./components/mode-toggle";
+import Nav from "./components/Nav";
 
 function App() {
 	return (
 		<>
-			<header className="flex items-center justify-between px-[12.5%] border-b py-3">
-				<nav className="flex items-center gap-6">
-					<Button size="icon" variant="ghost">
-						<Link to="/">
-							<KanbanIcon />
-						</Link>
-					</Button>
-					<Button variant="link" asChild>
-						<Link to="/leaderboard">Leaderboard</Link>
-					</Button>
-					<Button variant="link" asChild>
-						<Link to="/assignments">View All Assignments</Link>
-					</Button>
-				</nav>
-
-				<nav className="flex items-center gap-3">
-					<Button variant="outline" asChild>
-						<Link to="/login">Login</Link>
-					</Button>
-					<ModeToggle />
-				</nav>
-			</header>
-
+			<Nav />
 			<Routes>
 				<Route path="/" element={<Kanban />} />
 			</Routes>
