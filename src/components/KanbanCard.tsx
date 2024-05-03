@@ -7,11 +7,15 @@ import {
 	CardTitle,
 } from "./ui/card";
 
-export default function KanbanCard() {
+interface KanbanCardProps {
+	title: string;
+}
+
+export default function KanbanCard({ title }: KanbanCardProps) {
 	return (
 		<Card>
 			<CardHeader>
-				<CardTitle className="text-md">Task Name</CardTitle>
+				<CardTitle className="text-md">{title}</CardTitle>
 				<CardDescription>Task Description</CardDescription>
 			</CardHeader>
 			<CardContent className="flex gap-4 items-center">
