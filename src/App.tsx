@@ -7,7 +7,10 @@ function App() {
 		<>
 			<Nav />
 			<Routes>
-				<Route path="/" element={<Kanban title={"Assignment 1"} />} />
+				<Route
+					path="/"
+					element={<Kanban title={"✨ Assignment 1"} />}
+				/>
 			</Routes>
 		</>
 	);
