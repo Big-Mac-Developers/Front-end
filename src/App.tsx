@@ -7,7 +7,7 @@ import { ModeToggle } from "./components/mode-toggle";
 function App() {
 	return (
 		<>
-			<header className="flex items-center justify-between px-[7.5%] border-b py-3">
+			<header className="flex items-center justify-between px-[12.5%] border-b py-3">
 				<nav className="flex items-center gap-6">
 					<Button size="icon" variant="ghost">
 						<KanbanIcon />
