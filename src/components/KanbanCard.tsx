@@ -18,7 +18,7 @@ export default function KanbanCard() {
 				<Avatar>
 					<AvatarFallback>JL</AvatarFallback>
 				</Avatar>
-				<p>04/05/2024</p>
+				<p className="opacity-65">04/05/2024</p>
 			</CardContent>
 		</Card>
 	);
