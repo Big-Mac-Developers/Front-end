@@ -29,7 +29,11 @@ export default function Kanban({ title }: KanbanProps) {
 							<KanbanHeader title="Todo" />
 							{todoItems.map((item) => (
 								<Reorder.Item key={item} value={item}>
-									<KanbanCard title="item" />
+									<KanbanCard
+										title="Title"
+										description="Description"
+										date={"04/05/2024"}
+									/>
 								</Reorder.Item>
 							))}
 						</Reorder.Group>
@@ -45,7 +49,11 @@ export default function Kanban({ title }: KanbanProps) {
 							<KanbanHeader title="In Progress" />
 							{inProgressItems.map((item) => (
 								<Reorder.Item key={item} value={item}>
-									<KanbanCard title="item" />
+									<KanbanCard
+										title="Title"
+										description="Description"
+										date={"04/05/2024"}
+									/>
 								</Reorder.Item>
 							))}
 						</Reorder.Group>
@@ -61,7 +69,11 @@ export default function Kanban({ title }: KanbanProps) {
 							<KanbanHeader title="Done" />
 							{doneItems.map((item) => (
 								<Reorder.Item key={item} value={item}>
-									<KanbanCard title="item" />
+									<KanbanCard
+										title="Title"
+										description="Description"
+										date={"04/05/2024"}
+									/>
 								</Reorder.Item>
 							))}
 						</Reorder.Group>
