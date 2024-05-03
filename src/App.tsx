@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Link, Route, Routes } from "react-router-dom";
+import Kanban from "./pages/Kanban";
+import { KanbanIcon } from "lucide-react";
+import { Button } from "./components/ui/button";
+import { ThemeProvider } from "./components/theme-provider";
 
 function App() {
-  const [count, setCount] = useState(0)
+	return (
+		<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+			<header className="flex items-center justify-between px-[7.5%] border-b py-3">
+				<nav className="flex items-center gap-6">
+					<Button size="icon" variant="ghost">
+						<KanbanIcon />
+					</Button>
+					<Button variant="link" asChild>
+						<Link to="/">Leaderboard</Link>
+					</Button>
+					<Button variant="link" asChild>
+						<Link to="/">View All Assignments</Link>
+					</Button>
+				</nav>
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+				<Button variant="outline" asChild>
+					<Link to="/login">Login</Link>
+				</Button>
+			</header>
+
+			<Routes>
+				<Route path="/" element={<Kanban />} />
+			</Routes>
+		</ThemeProvider>
+	);
 }
 
-export default App
+export default App;
