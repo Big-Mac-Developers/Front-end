@@ -13,10 +13,10 @@ function App() {
 						<KanbanIcon />
 					</Button>
 					<Button variant="link" asChild>
-						<Link to="/">Leaderboard</Link>
+						<Link to="/leaderboard">Leaderboard</Link>
 					</Button>
 					<Button variant="link" asChild>
-						<Link to="/">View All Assignments</Link>
+						<Link to="/assignments">View All Assignments</Link>
 					</Button>
 				</nav>
 
