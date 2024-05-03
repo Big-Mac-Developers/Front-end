@@ -13,7 +13,7 @@ interface KanbanCardProps {
 
 export default function KanbanCard({ title }: KanbanCardProps) {
 	return (
-		<Card>
+		<Card className="cursor-pointer dark:hover:brightness-150 hover:brightness-[97%]">
 			<CardHeader>
 				<CardTitle className="text-md">{title}</CardTitle>
 				<CardDescription>Task Description</CardDescription>

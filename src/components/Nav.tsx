@@ -21,10 +21,10 @@ export default function Nav() {
 			</nav>
 
 			<nav className="flex items-center gap-3">
+				<ModeToggle />
 				<Button variant="outline" asChild>
 					<Link to="/login">Login</Link>
 				</Button>
-				<ModeToggle />
 			</nav>
 		</header>
 	);

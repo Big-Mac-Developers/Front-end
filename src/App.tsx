@@ -7,7 +7,7 @@ function App() {
 		<>
 			<Nav />
 			<Routes>
-				<Route path="/" element={<Kanban />} />
+				<Route path="/" element={<Kanban title={"Assignment 1"} />} />
 			</Routes>
 		</>
 	);

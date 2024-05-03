@@ -7,7 +7,7 @@ interface KanbanHeaderProps {
 
 export default function KanbanHeader({ title }: KanbanHeaderProps) {
 	return (
-		<div className="flex justify-between mb-4">
+		<div className="flex justify-between">
 			<h2 className="text-2xl font-semibold">{title}</h2>
 			<Button size="icon" variant="outline" className="h-8 w-8">
 				<PlusIcon size={18} />
