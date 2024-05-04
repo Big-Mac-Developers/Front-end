@@ -16,7 +16,7 @@ export function NewTaskDialog() {
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
-				<Button size="icon" variant="outline" className="h-8 w-8">
+				<Button size="icon" variant="outline" className="h-8 w-8 mt-2">
 					<PlusIcon size={18} />
 				</Button>
 			</DialogTrigger>
