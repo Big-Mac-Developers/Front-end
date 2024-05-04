@@ -6,6 +6,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "./ui/card";
+import { DatePickerWithPresets } from "./DatePicker";
 
 interface KanbanCardProps {
 	title: string;
@@ -24,9 +25,9 @@ export default function KanbanCard({
 				<CardTitle className="text-sm">{title}</CardTitle>
 				<CardDescription>{description}</CardDescription>
 			</CardHeader>
-			<CardContent className="flex gap-2 p-0 items-center mt-4">
+			<CardContent className="flex gap-4 p-0 items-center mt-4 justify-between">
+				<DatePickerWithPresets />
 				<CircleUser className="opacity-60" />
-				<p className="opacity-65 text-sm">{date}</p>
 			</CardContent>
 		</Card>
 	);
