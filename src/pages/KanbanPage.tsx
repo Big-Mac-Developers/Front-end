@@ -28,11 +28,6 @@ export default function KanbanPage() {
 				</div>
 				<KanbanBoard />
 			</div>
-			<div className="flex justify-center">
-				<Button asChild>
-					<Link to={"/leaderboard/" + id}>See the leaderboard</Link>
-				</Button>
-			</div>
 		</div>
 	);
 }

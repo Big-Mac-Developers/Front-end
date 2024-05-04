@@ -9,23 +9,27 @@ import {
 import { Link, useParams } from "react-router-dom";
 import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 import newDummyData from "../lib/newDummyData.json";
+import { Button } from "@/components/ui/button";
 
 export default function AssignmentsPage() {
 	const { id } = useParams();
 	const [assignments, setAssignments] = useState<Assignment[]>([]);
-
+	const [unit, setUnit] = useState<Unit>();
 	useEffect(() => {
 		// @ts-ignore
 		const unit: Unit = newDummyData.find((unit) => unit.id === id);
+		setUnit(unit);
 		setAssignments(unit.assignments);
 	}, []);
 
 	return (
 		<div className="flex flex-col gap-8 md:gap-12">
 			<div className="flex gap-8">
-				<h1 className="md:text-4xl text-2xl font-bold">
-					📝 Your Assignments
-				</h1>
+				{unit && (
+					<h1 className="md:text-4xl text-2xl font-bold">
+						{"📝 " + unit.title}
+					</h1>
+				)}
 				<NewAssignmentDialog />
 			</div>
 			<div className="grid grid-cols-3 gap-4">
@@ -48,6 +52,11 @@ export default function AssignmentsPage() {
 						</Card>
 					</Link>
 				))}
+			</div>
+			<div className="flex justify-center">
+				<Button asChild>
+					<Link to={"/leaderboard/" + id}>See the leaderboard</Link>
+				</Button>
 			</div>
 		</div>
 	);
