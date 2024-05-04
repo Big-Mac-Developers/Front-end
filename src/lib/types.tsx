@@ -1,5 +1,6 @@
 // Unit (e.g. FIT1045)
 export interface Unit {
+	id: string;
 	title: string;
 	assignments: Assignment[];
 	active: boolean;
@@ -7,6 +8,7 @@ export interface Unit {
 
 // Assignment (e.g. Assignment 1)
 export interface Assignment {
+	id: string;
 	title: string;
 	active: boolean;
 	main_tasks: MainTask[];

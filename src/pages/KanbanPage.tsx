@@ -1,14 +1,19 @@
 import KanbanBoard from "@/components/KanbanBoard";
 import { NewTaskDialog } from "@/components/NewTaskDialog";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import { Assignment, MainTask } from "@/lib/types";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 export default function KanbanPage() {
-	// get the board id via the url
 	const { id } = useParams();
+	const [mainTasks, setMainTasks] = useState<MainTask[]>([]);
 
-	// get data using react query and pass to kanban board
+	// useEffect(() => {
+	// 	// @ts-ignore
+	// 	const assignment: Assignment = newDummyData.find((unit) => unit.id === id);
+	// 	setAssignments(unit.assignments);
+	// }, []);
 
 	return (
 		<div className="flex flex-col gap-4">
@@ -20,7 +25,6 @@ export default function KanbanPage() {
 						</h1>
 						<NewTaskDialog />
 					</div>
-					<Progress value={66} className="w-[60%] mt-2" />
 				</div>
 				<KanbanBoard />
 			</div>
