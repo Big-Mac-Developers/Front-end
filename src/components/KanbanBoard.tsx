@@ -9,45 +9,45 @@ import {useState} from "react";
 import KanbanCard from "@/components/KanbanCard";
 import {SubTask} from "@/model/task";
 import {Section} from "@/model/board";
+import {mockMembers} from "@/lib/mockUsers";
+import {useBoard} from "@/module/board/BoardHook";
+import {mockBoard} from "@/lib/mockBoard";
+const SECTION_CONFIG = {
+  todo: {title: " 📃 To do"},
+  inProgress: {title: "🚀 In Progress"},
+  done: {title: "✅ Done"},
+};
 
 export default function KanbanBoard() {
-  const [data, setData] = useState<Section[]>(mockData);
+  const {todoTasks, inProgressTasks, doneTasks, handleTaskChange} = useBoard({
+    board: mockBoard,
+  });
 
+  const sections: Section[] = [
+    {id: "todo", title: SECTION_CONFIG.todo.title, tasks: todoTasks},
+    {
+      id: "in-progress",
+      title: SECTION_CONFIG.inProgress.title,
+      tasks: inProgressTasks,
+    },
+    {id: "done", title: SECTION_CONFIG.done.title, tasks: doneTasks},
+  ];
   const onDragEnd = (result: DropResult) => {
     if (!result.destination) return;
     const {source, destination} = result;
-    console.log(source);
-    console.log(destination);
-    if (source.droppableId !== destination.droppableId) {
-      const sourceColIndex = data.findIndex((e) => e.id === source.droppableId);
-      const destinationColIndex = data.findIndex(
-        (e) => e.id === destination.droppableId
-      );
+    const sourceSection = sections.find((e) => e.id === source.droppableId);
+    const selectedTask = sourceSection?.tasks.splice(source.index, 1);
 
-      const sourceCol = data[sourceColIndex];
-      const destinationCol = data[destinationColIndex];
-
-      const sourceTask = [...sourceCol.tasks];
-      const destinationTask = [...destinationCol.tasks];
-
-      const [removed] = sourceTask.splice(source.index, 1);
-      removed.status = destinationCol.id;
-      destinationTask.splice(destination.index, 0, removed);
-
-      data[sourceColIndex].tasks = sourceTask;
-      data[destinationColIndex].tasks = destinationTask;
-      console.log(destinationTask);
-      setData([...data]);
-    } else {
-      const sourceSection = data.find((e) => e.id === source.droppableId);
-      const selectedTask = sourceSection?.tasks.splice(source.index, 1);
-      const destinationSection = data.find(
-        (e) => e.id === destination.droppableId
-      );
-      if (selectedTask) {
-        destinationSection?.tasks.splice(destination.index, 0, selectedTask[0]);
-      }
-      setData([...data]);
+    const destinationSection = sections.find(
+      (e) => e.id === destination.droppableId
+    );
+    if (selectedTask) {
+      destinationSection?.tasks.splice(destination.index, 0, selectedTask[0]);
+      selectedTask[0].status = destination.droppableId as
+        | "todo"
+        | "in-progress"
+        | "done";
+      handleTaskChange(selectedTask[0]);
     }
   };
 
@@ -55,7 +55,7 @@ export default function KanbanBoard() {
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="flex flex-col justify-between w-full">
         <div className="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-3">
-          {data.map((section) => (
+          {sections.map((section) => (
             <Droppable key={section.id} droppableId={section.id}>
               {(provided) => (
                 <div
@@ -82,9 +82,9 @@ export default function KanbanBoard() {
                             }}
                           >
                             <KanbanCard
-                              title={task.title}
-                              description="Description"
-                              date="01/01/2004"
+                              subtask={task}
+                              members={mockMembers}
+                              handleTaskChange={handleTaskChange}
                             />
                           </div>
                         )}

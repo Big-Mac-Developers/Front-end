@@ -1,9 +1,10 @@
 import { MainTask, SubTask, Status } from '@/model/task';
+import { User } from '@/model/user';
 export interface Board {
     board_id: number
     title: string
     moderator_id: string
-    members: string[]
+    members: User[]
     tasks: MainTask[]
 }
 

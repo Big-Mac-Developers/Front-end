@@ -21,9 +21,8 @@ export function DatePickerWithPresets({
   setDate,
 }: {
   date: Date | undefined;
-  setDate: React.Dispatch<React.SetStateAction<Date | undefined>>;
+  setDate: (date: Date | undefined) => void;
 }) {
-  console.log(new Date().getUTCDate());
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -59,7 +58,7 @@ export function DatePickerWithPresets({
             mode="single"
             disabled={(date) => date.getDate() < new Date().getDate()}
             selected={date}
-            onSelect={setDate}
+            onSelect={(date: Date | undefined) => setDate(date)}
           />
         </div>
       </PopoverContent>

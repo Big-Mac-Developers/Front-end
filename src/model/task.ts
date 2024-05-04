@@ -1,3 +1,4 @@
+import { User } from "./user";
 
 interface MainTaskInitial {
     title: string
@@ -22,7 +23,7 @@ export interface SubTaskInitial {
 }
 export interface SubTask extends SubTaskInitial {
     id: string
-    assignee?: string
+    assignee?: User
     assigned_date?: Date
     completed_date?: Date
 }
