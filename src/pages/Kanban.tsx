@@ -15,9 +15,9 @@ export default function Kanban({ title }: KanbanProps) {
 	const [doneItems, setDoneItems] = useState([0, 1, 2]);
 
 	return (
-		<div className="flex flex-col gap-14 md:mx-[17%] m-4 mt-10 md:mt-28">
+		<div className="flex flex-col gap-12 md:mx-[17%] m-4 mt-10 md:mt-28">
 			<div className="flex gap-8 items-center">
-				<h1 className="md:text-5xl text-4xl font-bold">{title}</h1>
+				<h1 className="md:text-4xl text-2xl font-bold">{title}</h1>
 				<NewTaskDialog />
 			</div>
 			<div className="flex justify-center">

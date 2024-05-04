@@ -1,3 +1,4 @@
+import { CircleUser } from "lucide-react";
 import { Avatar, AvatarFallback } from "./ui/avatar";
 import {
 	Card,
@@ -19,16 +20,14 @@ export default function KanbanCard({
 	date,
 }: KanbanCardProps) {
 	return (
-		<Card className="active:cursor-grabbing cursor-grab dark:hover:brightness-150 hover:brightness-[97%]">
-			<CardHeader>
-				<CardTitle className="text-md">{title}</CardTitle>
+		<Card className="active:cursor-grabbing cursor-grab dark:hover:brightness-110 hover:brightness-[97%] p-4">
+			<CardHeader className="p-0">
+				<CardTitle className="text-sm">{title}</CardTitle>
 				<CardDescription>{description}</CardDescription>
 			</CardHeader>
-			<CardContent className="flex gap-4 items-center">
-				<Avatar>
-					<AvatarFallback>JL</AvatarFallback>
-				</Avatar>
-				<p className="opacity-65">{date}</p>
+			<CardContent className="flex gap-2 p-0 items-center mt-4">
+				<CircleUser className="opacity-60" />
+				<p className="opacity-65 text-sm">{date}</p>
 			</CardContent>
 		</Card>
 	);
