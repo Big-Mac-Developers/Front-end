@@ -22,7 +22,7 @@ export interface SubTaskInitial {
 }
 export interface SubTask extends SubTaskInitial {
     id: string
-    assignee: string
+    assignee?: string
     assigned_date?: Date
     completed_date?: Date
 }
