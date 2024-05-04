@@ -1,9 +1,23 @@
+// Unit (e.g. FIT1045)
+export interface Unit {
+	title: string;
+	assignments: Assignment[];
+	active: boolean;
+}
+
+// Assignment (e.g. Assignment 1)
+export interface Assignment {
+	title: string;
+	active: boolean;
+	main_tasks: MainTask[];
+}
+
+// Main task (e.g. Write report)
 export interface MainTaskInitial {
 	title: string;
 	description: string;
 	due_date: Date;
 	status: Status;
-	board_id: number;
 }
 
 export interface MainTask extends MainTaskInitial {
@@ -11,12 +25,12 @@ export interface MainTask extends MainTaskInitial {
 	subtasks: SubTask[];
 }
 
+// SubTask (e.g. Write introduction paragraph)
 export interface SubTaskInitial {
 	title: string;
 	description: string;
 	due_date?: Date;
 	status: Status;
-	main_task_id: number;
 }
 
 export interface SubTask extends SubTaskInitial {
@@ -26,4 +40,4 @@ export interface SubTask extends SubTaskInitial {
 	completed_date: Date;
 }
 
-export type Status = "todo" | "in-progress" | "done";
+export type Status = "TODO" | "IN_PROGRESS" | "DONE";

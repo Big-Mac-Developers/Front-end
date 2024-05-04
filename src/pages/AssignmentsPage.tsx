@@ -28,7 +28,7 @@ export default function AssignmentsPage() {
 			</div>
 			<div className="grid grid-cols-3 gap-4">
 				{mainTasks.map((task) => (
-					<Link to={"/kanban/" + task.board_id.toString()}>
+					<Link to={"/kanban/" + task.id.toString()}>
 						<Card className="dark:hover:brightness-110 hover:brightness-[97%] p-4 dark:bg-neutral-900 bg-neutral-100">
 							<CardHeader className="p-0 mb-4">
 								<CardTitle className="text-lg">

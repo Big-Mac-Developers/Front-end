@@ -25,7 +25,7 @@ export default function KanbanPage() {
 				<KanbanBoard />
 			</div>
 			<div className="flex justify-center">
-				<Button className="w-min">
+				<Button asChild>
 					<Link to={"/leaderboard/" + id}>See the leaderboard</Link>
 				</Button>
 			</div>
