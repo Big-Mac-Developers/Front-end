@@ -473,7 +473,7 @@
 			},
 			{
 				"id": "A2",
-				"title": "Assignment 2",
+				"title": "Assignment sadasdas2",
 				"active": true,
 				"main_tasks": [
 					{
@@ -550,7 +550,7 @@
 					},
 					{
 						"id": 3,
-						"title": "Assignment Task 3",
+						"title": "Assignmedsadsant Task 3",
 						"description": "This is the third task of the assignment",
 						"due_date": "2024-05-20T00:00:00.000Z",
 						"status": 0,
@@ -629,7 +629,7 @@
 					},
 					{
 						"id": 2,
-						"title": "Assignment Task 2",
+						"title": "Assignmendasdsadt Task 2",
 						"description": "This is the second task of the assignment",
 						"due_date": "2024-05-15T00:00:00.000Z",
 						"status": 0,
@@ -824,7 +824,7 @@
 			},
 			{
 				"id": "A2",
-				"title": "Assignment 2",
+				"title": "Assignmdsadasent 2",
 				"active": true,
 				"main_tasks": [
 					{

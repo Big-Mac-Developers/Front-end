@@ -28,7 +28,6 @@ export default function UnitsPage() {
 					</h1>
 					<NewAssignmentDialog />
 				</div>
-				<Progress value={66} className="w-[60%] mt-2" />
 			</div>
 			<div className="grid grid-cols-3 gap-4">
 				{units.map((unit) => (

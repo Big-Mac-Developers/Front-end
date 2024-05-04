@@ -10,6 +10,7 @@ import { Link, useParams } from "react-router-dom";
 import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 import newDummyData from "../lib/newDummyData.json";
 import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
 
 export default function AssignmentsPage() {
 	const { id } = useParams();
@@ -24,13 +25,16 @@ export default function AssignmentsPage() {
 
 	return (
 		<div className="flex flex-col gap-8 md:gap-12">
-			<div className="flex gap-8">
-				{unit && (
-					<h1 className="md:text-4xl text-2xl font-bold">
-						{"📝 " + unit.title}
-					</h1>
-				)}
-				<NewAssignmentDialog />
+			<div className="flex items-center justify-between gap-4">
+				<div className="flex gap-8">
+					{unit && (
+						<h1 className="md:text-4xl text-2xl font-bold text-nowrap">
+							{"📝 " + unit.title}
+						</h1>
+					)}
+					<NewAssignmentDialog />
+				</div>
+				<Progress value={66} className="w-[60%] mt-2" />
 			</div>
 			<div className="grid grid-cols-3 gap-4">
 				{assignments.map((assignment) => (
