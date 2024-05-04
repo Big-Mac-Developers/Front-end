@@ -1,7 +1,7 @@
-import {SubTaskInitial} from "@/model/task";
+import {SubTaskInitial, Status} from "@/model/task";
 
 export async function createSubTask(
-  main_task_id: number,
+  main_task_id: string,
   title: string,
   description: string
 ) {
@@ -20,6 +20,19 @@ export async function createSubTask(
       cors: "no-cors",
     },
     body: JSON.stringify(subtask),
+  });
+  return req;
+}
+
+export async function updateSubTask(subtaskId: string, status: Status) {
+  const req = await fetch(`http://localhost:8000/task/updateSub/${subtaskId}`, {
+    method: "PATCH",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json",
+      cors: "no-cors",
+    },
+    body: JSON.stringify({status: status}),
   });
   return req;
 }

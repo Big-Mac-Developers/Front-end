@@ -7,7 +7,7 @@ interface MainTaskInitial {
 }
 
 interface MainTask extends MainTaskInitial {
-    id: number
+    id: string
     subtasks: SubTask[]
 
 }
@@ -16,7 +16,7 @@ export interface SubTaskInitial {
     description: string
     due_date?: Date
     status: Status
-    main_task_id: number
+    main_task_id: string
 
 }
 export interface SubTask extends SubTaskInitial {
@@ -26,4 +26,4 @@ export interface SubTask extends SubTaskInitial {
     completed_date: Date
 }
 
-type Status = "todo" | "in-progress" | "done"
+export type Status = "todo" | "in-progress" | "done"
