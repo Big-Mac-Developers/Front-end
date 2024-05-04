@@ -9,6 +9,7 @@ import {
 	CardTitle,
 } from "@/components/ui/card.tsx";
 import { Link } from "react-router-dom";
+import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 
 export default function AssignmentsPage() {
 	const [mainTasks, setMainTasks] = useState<MainTask[]>([]);
@@ -19,9 +20,12 @@ export default function AssignmentsPage() {
 
 	return (
 		<div className="flex flex-col gap-8 md:gap-12">
-			<h1 className="md:text-4xl text-2xl font-bold">
-				📝 Your Assignments
-			</h1>
+			<div className="flex gap-8">
+				<h1 className="md:text-4xl text-2xl font-bold">
+					📝 Your Assignments
+				</h1>
+				<NewAssignmentDialog />
+			</div>
 			<div className="grid grid-cols-3 gap-4">
 				{mainTasks.map((task) => (
 					<Link to={"/kanban/" + task.board_id.toString()}>
