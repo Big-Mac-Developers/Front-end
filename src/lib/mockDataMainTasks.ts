@@ -37,7 +37,7 @@ const mainTasks: MainTask[] = [
 		description: "Create slides for project presentation",
 		due_date: new Date("2024-05-20"),
 		status: "todo",
-		board_id: 1,
+		board_id: 2,
 		subtasks: [
 			{
 				id: "3",
@@ -67,7 +67,7 @@ const mainTasks: MainTask[] = [
 		description: "Lorem ipsum blah blah",
 		due_date: new Date("2024-05-20"),
 		status: "todo",
-		board_id: 1,
+		board_id: 3,
 		subtasks: [
 			{
 				id: "3",
@@ -97,7 +97,7 @@ const mainTasks: MainTask[] = [
 		description: "Lorem ipsum blah blah",
 		due_date: new Date("2024-05-20"),
 		status: "todo",
-		board_id: 1,
+		board_id: 4,
 		subtasks: [
 			{
 				id: "3",
