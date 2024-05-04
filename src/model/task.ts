@@ -1,3 +1,4 @@
+
 interface MainTaskInitial {
     title: string
     description: string
@@ -6,7 +7,7 @@ interface MainTaskInitial {
     board_id: number
 }
 
-interface MainTask extends MainTaskInitial {
+export interface MainTask extends MainTaskInitial {
     id: string
     subtasks: SubTask[]
 
@@ -21,9 +22,9 @@ export interface SubTaskInitial {
 }
 export interface SubTask extends SubTaskInitial {
     id: string
-    assignee: string
-    assigned_date: Date
-    completed_date: Date
+    assignee?: string
+    assigned_date?: Date
+    completed_date?: Date
 }
 
 export type Status = "todo" | "in-progress" | "done"
