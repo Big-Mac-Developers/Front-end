@@ -13,7 +13,7 @@ export default function Nav() {
 					</Link>
 				</Button>
 				<Button variant="link" asChild>
-					<Link to="/assignments">View All Assignments</Link>
+					<Link to="/units">Your Units</Link>
 				</Button>
 			</nav>
 
