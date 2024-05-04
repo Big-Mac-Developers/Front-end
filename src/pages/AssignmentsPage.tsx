@@ -8,6 +8,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card.tsx";
+import { Link } from "react-router-dom";
 
 export default function AssignmentsPage() {
 	const [mainTasks, setMainTasks] = useState<MainTask[]>([]);
@@ -18,11 +19,13 @@ export default function AssignmentsPage() {
 
 	return (
 		<div className="flex flex-col gap-8 md:gap-12">
-			<h1 className="md:text-4xl text-2xl font-bold">Your Assignments</h1>
-			<ul className="grid grid-cols-3 gap-4">
+			<h1 className="md:text-4xl text-2xl font-bold">
+				📝 Your Assignments
+			</h1>
+			<div className="grid grid-cols-3 gap-4">
 				{mainTasks.map((task) => (
-					<li id={task.board_id.toString()}>
-						<Card className="hover:cursor-pointer dark:hover:brightness-110 hover:brightness-[97%] p-4 dark:bg-neutral-900 bg-neutral-100">
+					<Link to={"/kanban/" + task.board_id.toString()}>
+						<Card className="dark:hover:brightness-110 hover:brightness-[97%] p-4 dark:bg-neutral-900 bg-neutral-100">
 							<CardHeader className="p-0 mb-4">
 								<CardTitle className="text-lg">
 									{task.title}
@@ -46,9 +49,9 @@ export default function AssignmentsPage() {
 								</div>
 							</CardContent>
 						</Card>
-					</li>
+					</Link>
 				))}
-			</ul>
+			</div>
 		</div>
 	);
 }

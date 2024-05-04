@@ -9,10 +9,8 @@ function App() {
 			<Nav />
 			<div className="md:mx-[20%] mx-4">
 				<Routes>
-					<Route
-						path="/"
-						element={<KanbanPage title={"✨ Assignment 1"} />}
-					/>
+					<Route path="/" element={<KanbanPage />} />
+					<Route path="/kanban/:id" element={<KanbanPage />} />
 					<Route path="/assignments" element={<AssignmentsPage />} />
 				</Routes>
 			</div>
