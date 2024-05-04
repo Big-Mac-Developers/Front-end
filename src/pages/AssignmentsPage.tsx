@@ -9,8 +9,9 @@ import {
 import { Link, useParams } from "react-router-dom";
 import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 import newDummyData from "../lib/newDummyData.json";
-import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress";
+import LeaderBoard from "@/components/Leaderboard";
 
 export default function AssignmentsPage() {
 	const { id } = useParams();
@@ -57,11 +58,10 @@ export default function AssignmentsPage() {
 					</Link>
 				))}
 			</div>
-			<div className="flex justify-center">
-				<Button asChild>
-					<Link to={"/leaderboard/" + id}>See the leaderboard</Link>
-				</Button>
-			</div>
+
+			<Separator />
+
+			<LeaderBoard />
 		</div>
 	);
 }
