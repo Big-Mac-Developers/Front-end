@@ -13,7 +13,7 @@ export default function Nav() {
 					</Link>
 				</Button>
 				<Button variant="link" asChild>
-					<Link to="/leaderboard">Leaderboard</Link>
+					<Link to="/leaderboard/1">Leaderboard</Link>
 				</Button>
 				<Button variant="link" asChild>
 					<Link to="/assignments">View All Assignments</Link>

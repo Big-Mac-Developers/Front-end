@@ -14,7 +14,10 @@ function App() {
 					<Route path="/" element={<LandingPage />} />
 					<Route path="/kanban/:id" element={<KanbanPage />} />
 					<Route path="/assignments" element={<AssignmentsPage />} />
-					<Route path="/leaderboard" element={<LeaderboardPage />} />
+					<Route
+						path="/leaderboard/:id"
+						element={<LeaderboardPage />}
+					/>
 				</Routes>
 			</div>
 		</>

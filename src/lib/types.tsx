@@ -10,6 +10,7 @@ export interface MainTask extends MainTaskInitial {
 	id: number;
 	subtasks: SubTask[];
 }
+
 export interface SubTaskInitial {
 	title: string;
 	description: string;
@@ -17,6 +18,7 @@ export interface SubTaskInitial {
 	status: Status;
 	main_task_id: number;
 }
+
 export interface SubTask extends SubTaskInitial {
 	id: string;
 	assignee: string;
