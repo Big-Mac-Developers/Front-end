@@ -1,5 +1,4 @@
 import { CircleUser } from "lucide-react";
-import { Avatar, AvatarFallback } from "./ui/avatar";
 import {
 	Card,
 	CardContent,

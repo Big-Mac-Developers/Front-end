@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import Kanban from "./pages/Kanban";
 import Nav from "./components/Nav";
+import KanbanPage from "./pages/KanbanPage";
 
 function App() {
 	return (
@@ -9,7 +9,7 @@ function App() {
 			<Routes>
 				<Route
 					path="/"
-					element={<Kanban title={"✨ Assignment 1"} />}
+					element={<KanbanPage title={"✨ Assignment 1"} />}
 				/>
 			</Routes>
 		</>
