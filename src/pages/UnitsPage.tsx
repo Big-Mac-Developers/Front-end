@@ -20,7 +20,7 @@ export default function UnitsPage() {
 	}, []);
 
 	return (
-		<div className="flex flex-col gap-8 md:gap-12">
+		<div className="flex flex-col gap-8 md:gap-12 lg:mx-[20%] mx-4 mt-10 md:mt-24">
 			<div className="flex items-center justify-between">
 				<div className="flex gap-8">
 					<h1 className="md:text-4xl text-2xl font-bold">

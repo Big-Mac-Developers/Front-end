@@ -1,38 +1,39 @@
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+	Dialog,
+	DialogContent,
+	DialogDescription,
+	DialogFooter,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
 } from "@/components/ui/dialog";
-import {Input} from "@/components/ui/input";
-import {Label} from "@/components/ui/label";
-import {PlusIcon} from "lucide-react";
-import {createSubTask} from "@/service/Kanban.service";
-import {useState} from "react";
-import {toast} from "react-toastify";
-import {SubTaskInitial, MainTask} from "@/model/task";
-import {MyDropDownMenu} from "./ui/DropDownMenu";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { PlusIcon } from "lucide-react";
+import { createSubTask } from "@/service/Kanban.service";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import { SubTaskInitial, MainTask } from "@/model/task";
+import { MyDropDownMenu } from "./ui/DropDownMenu";
 
 import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
+	Select,
+	SelectContent,
+	SelectGroup,
+	SelectItem,
+	SelectLabel,
+	SelectTrigger,
+	SelectValue,
 } from "@/components/ui/select";
 export function NewTaskDialog({
-  createSubTaskFunc,
-  MainTasks,
+	createSubTaskFunc,
+	MainTasks,
 }: {
-  createSubTaskFunc: (arg0: SubTaskInitial) => void;
-  MainTasks: MainTask[];
+	createSubTaskFunc: (arg0: SubTaskInitial) => void;
+	MainTasks: MainTask[];
 }) {
+
   const [isOpen, setIsOpen] = useState(false);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -119,4 +120,5 @@ export function NewTaskDialog({
       </DialogContent>
     </Dialog>
   );
+
 }

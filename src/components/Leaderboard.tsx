@@ -11,46 +11,39 @@ import {
 export default function LeaderBoard() {
 	const teams = [
 		{
-			invoice: "1",
-			paymentStatus: "Paid",
-			totalAmount: "80",
-			paymentMethod: "Credit Card",
+			rank: "1",
+			name: "Thunderbolts",
+			score: "80",
 		},
 		{
-			invoice: "2",
-			paymentStatus: "Pending",
-			totalAmount: "55",
-			paymentMethod: "PayPal",
+			rank: "2",
+			name: "Firebirds",
+			score: "55",
 		},
 		{
-			invoice: "3",
-			paymentStatus: "Unpaid",
-			totalAmount: "30",
-			paymentMethod: "Bank Transfer",
+			rank: "3",
+			name: "Dragonflies",
+			score: "30",
 		},
 		{
-			invoice: "4",
-			paymentStatus: "Paid",
-			totalAmount: "60",
-			paymentMethod: "Credit Card",
+			rank: "4",
+			name: "Phoenix",
+			score: "60",
 		},
 		{
-			invoice: "5",
-			paymentStatus: "Paid",
-			totalAmount: "20",
-			paymentMethod: "PayPal",
+			rank: "5",
+			name: "Eagles",
+			score: "20",
 		},
 		{
-			invoice: "6",
-			paymentStatus: "Pending",
-			totalAmount: "30",
-			paymentMethod: "Bank Transfer",
+			rank: "6",
+			name: "Raptors",
+			score: "30",
 		},
 		{
-			invoice: "7",
-			paymentStatus: "Unpaid",
-			totalAmount: "80",
-			paymentMethod: "Credit Card",
+			rank: "7",
+			name: "Cobras",
+			score: "80",
 		},
 	];
 
@@ -68,25 +61,25 @@ export default function LeaderBoard() {
 				<TableHeader>
 					<TableRow>
 						<TableHead>Rank</TableHead>
-						<TableHead>Name</TableHead>
+						<TableHead>Team Name</TableHead>
 						<TableHead className="text-right">
-							Experience points
+							Experience points 🟢
 						</TableHead>
 					</TableRow>
 				</TableHeader>
 				<TableBody>
 					{teams.map((team) => (
-						<TableRow key={team.invoice}>
+						<TableRow key={team.rank}>
 							<TableCell className="font-medium">
-								{team.invoice}
+								{team.rank}
 							</TableCell>
-							<TableCell>{team.paymentStatus}</TableCell>
+							<TableCell>{team.name}</TableCell>
 							<TableCell className="flex justify-end gap-4">
 								<Progress
-									value={Number(team.totalAmount)}
+									value={Number(team.score)}
 									className="w-[60%]"
 								/>
-								<p>{team.totalAmount}/100</p>
+								<p>{team.score}/100</p>
 							</TableCell>
 						</TableRow>
 					))}
