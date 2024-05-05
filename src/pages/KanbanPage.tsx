@@ -9,7 +9,6 @@ import {useBoard} from "@/module/board/BoardHook";
 import {mockBoard} from "@/lib/mockBoard";
 import {Progress} from "@/components/ui/progress";
 
-
 export default function KanbanPage() {
   const {id} = useParams();
 
@@ -22,13 +21,6 @@ export default function KanbanPage() {
   } = useBoard({
     board: mockBoard,
   });
-
-
-  // useEffect(() => {
-  // 	// @ts-ignore
-  // 	const assignment: Assignment = newDummyData.find((unit) => unit.id === id);
-  // 	setAssignments(unit.assignments);
-  // }, []);
 
   return (
     <div className="flex flex-col gap-4">

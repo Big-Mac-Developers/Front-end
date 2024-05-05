@@ -21,7 +21,7 @@ import {useState} from "react";
 import {User} from "@/model/user";
 import {set} from "date-fns";
 import {Pencil, Trash2} from "lucide-react";
-import {useTask} from "@/module/task/TaskHook";
+import {useTask} from "@/module/Task/TaskHook";
 export default function KanbanCard({
   subtask,
   members,
