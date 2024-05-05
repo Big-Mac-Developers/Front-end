@@ -10,7 +10,6 @@ import { Link, useParams } from "react-router-dom";
 import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 import newDummyData from "../lib/newDummyData.json";
 import { Separator } from "@/components/ui/separator";
-import { Progress } from "@/components/ui/progress";
 import LeaderBoard from "@/components/Leaderboard";
 
 export default function AssignmentsPage() {
@@ -35,12 +34,11 @@ export default function AssignmentsPage() {
 					)}
 					<NewAssignmentDialog />
 				</div>
-				<Progress value={66} className="w-[60%] mt-2" />
 			</div>
 			<div className="grid grid-cols-3 gap-4">
 				{assignments.map((assignment) => (
 					<Link to={"/kanban/" + assignment.id} key={assignment.id}>
-						<Card className="dark:hover:brightness-110 hover:brightness-[97%] p-4 dark:bg-neutral-900 bg-neutral-100">
+						<Card className="dark:hover:brightness-110 hover:brightness-[98%] p-4 dark:bg-neutral-900 bg-neutral-100">
 							<CardHeader className="p-0 mb-4">
 								<CardTitle className="text-lg">
 									{assignment.title}
@@ -53,6 +51,7 @@ export default function AssignmentsPage() {
 									</span>{" "}
 									{assignment.active ? "Active" : "Inactive"}
 								</div>
+								{}
 							</CardContent>
 						</Card>
 					</Link>

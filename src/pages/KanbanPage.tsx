@@ -1,4 +1,5 @@
 import KanbanBoard from "@/components/KanbanBoard";
+
 import {NewTaskDialog} from "@/components/NewTaskDialog";
 import {Button} from "@/components/ui/button";
 import {Assignment, MainTask} from "@/lib/types";
@@ -7,6 +8,7 @@ import {Link, useParams} from "react-router-dom";
 import {useBoard} from "@/module/board/BoardHook";
 import {mockBoard} from "@/lib/mockBoard";
 import {Progress} from "@/components/ui/progress";
+
 
 export default function KanbanPage() {
   const {id} = useParams();
@@ -20,6 +22,7 @@ export default function KanbanPage() {
   } = useBoard({
     board: mockBoard,
   });
+
 
   // useEffect(() => {
   // 	// @ts-ignore

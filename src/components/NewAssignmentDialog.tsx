@@ -22,7 +22,7 @@ export function NewAssignmentDialog() {
 			</DialogTrigger>
 			<DialogContent className="sm:max-w-[450px]">
 				<DialogHeader>
-					<DialogTitle>New Assignnment</DialogTitle>
+					<DialogTitle>New Assignment</DialogTitle>
 					<DialogDescription>
 						Make changes to your assignment here. Click save when
 						you're done.

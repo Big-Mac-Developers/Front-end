@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { KanbanIcon } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
+import AuthDialog from "./AuthDialog";
 
 export default function Nav() {
 	return (
@@ -13,15 +14,13 @@ export default function Nav() {
 					</Link>
 				</Button>
 				<Button variant="link" asChild>
-					<Link to="/units">Your Units</Link>
+					<Link to="/units">Your Quests</Link>
 				</Button>
 			</nav>
 
 			<nav className="flex items-center gap-3 flex-wrap">
 				<ModeToggle />
-				<Button variant="outline" asChild>
-					<Link to="/login">Login</Link>
-				</Button>
+				<AuthDialog />
 			</nav>
 		</header>
 	);
