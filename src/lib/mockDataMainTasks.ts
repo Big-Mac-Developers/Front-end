@@ -1,4 +1,4 @@
-import { MainTask, Status } from "./types.tsx"; // Assuming your interfaces are in a file called 'interfaces.ts'
+import { MainTask } from "./types.tsx"; // Assuming your interfaces are in a file called 'interfaces.ts'
 
 const mainTasks: MainTask[] = [
 	{

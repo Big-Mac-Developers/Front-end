@@ -96,15 +96,15 @@ export function useBoard({ board }: { board: Board }) {
 		setSubtasks("update")(modifiedTask);
 	};
 
-	const deleteTask = (task: SubTask) => {
-		if (task.status === "todo") {
-			setTodoTasks((prev) => prev.filter((t) => t.id !== task.id));
-		} else if (task.status === "in-progress") {
-			setInProgressTasks((prev) => prev.filter((t) => t.id !== task.id));
-		} else {
-			setDoneTasks((prev) => prev.filter((t) => t.id !== task.id));
-		}
-	};
+	// const deleteTask = (task: SubTask) => {
+	// 	if (task.status === "todo") {
+	// 		setTodoTasks((prev) => prev.filter((t) => t.id !== task.id));
+	// 	} else if (task.status === "in-progress") {
+	// 		setInProgressTasks((prev) => prev.filter((t) => t.id !== task.id));
+	// 	} else {
+	// 		setDoneTasks((prev) => prev.filter((t) => t.id !== task.id));
+	// 	}
+	// };
 
 	const createSubTask = async (task: SubTaskInitial) => {
 		// const req = createSubTaskService(task);

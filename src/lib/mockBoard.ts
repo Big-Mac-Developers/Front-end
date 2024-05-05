@@ -21,7 +21,7 @@ export const mockBoard: Board = {
 					description: "Subtask Description 1",
 					due_date: new Date("2023-12-31"),
 					status: "in-progress",
-					assignee: "1",
+					// assignee: "1",
 					main_task_id: "1",
 				},
 				{
@@ -30,7 +30,7 @@ export const mockBoard: Board = {
 					description: "Subtask Description 2",
 					due_date: new Date("2025-12-31"),
 					status: "todo",
-					assignee: "1",
+					// assignee: "1",
 					main_task_id: "1",
 				},
 				{
@@ -39,7 +39,7 @@ export const mockBoard: Board = {
 					description: "Subtask Description 2",
 					due_date: new Date("2023-12-31"),
 					status: "done",
-					assignee: "1",
+					// assignee: "1",
 					main_task_id: "1",
 				},
 				{
@@ -48,7 +48,7 @@ export const mockBoard: Board = {
 					description: "Subtask Description 2",
 					due_date: new Date("2025-12-31"),
 					status: "done",
-					assignee: "1",
+					// assignee: "1",
 					main_task_id: "1",
 				},
 				{
@@ -57,7 +57,7 @@ export const mockBoard: Board = {
 					description: "Subtask Description 2",
 					due_date: new Date("2025-12-31"),
 					status: "todo",
-					assignee: "1",
+					// assignee: "1",
 					main_task_id: "1",
 				},
 			],

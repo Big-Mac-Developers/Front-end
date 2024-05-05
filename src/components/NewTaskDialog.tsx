@@ -11,12 +11,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PlusIcon } from "lucide-react";
-import { createSubTask } from "@/service/Kanban.service";
-import { useState } from "react";
-import { toast } from "react-toastify";
-import { SubTaskInitial, MainTask } from "@/model/task";
-import { MyDropDownMenu } from "./ui/DropDownMenu";
-
 import {
 	Select,
 	SelectContent,
@@ -26,6 +20,8 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
+import { MainTask, SubTaskInitial } from "@/model/task";
+import { useState } from "react";
 export function NewTaskDialog({
 	createSubTaskFunc,
 	MainTasks,
@@ -44,6 +40,7 @@ export function NewTaskDialog({
 			status: "todo",
 			main_task_id: maintaskid,
 		});
+		console.log(submitStatus);
 	};
 
 	return (
