@@ -112,7 +112,7 @@ export const Header = () => {
 				tasks with a kanban board! Collaborate with teammates.
 			</p>
 			<Button asChild className="mt-7 z-10 absolute">
-				<Link to={"/units"}>See your units</Link>
+				<Link to={"/units"}>🍔 See your units</Link>
 			</Button>
 		</div>
 	);
