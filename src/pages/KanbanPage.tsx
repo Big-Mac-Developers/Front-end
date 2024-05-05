@@ -42,7 +42,7 @@ export default function KanbanPage() {
 					doneTasks={doneTasks}
 				/>
 			</div>
-			<Progress value={} />
+			{/* <Progress value={} /> */}
 		</div>
 	);
 }
