@@ -70,7 +70,7 @@ export default function LeaderBoard() {
 						<TableHead>Rank</TableHead>
 						<TableHead>Name</TableHead>
 						<TableHead className="text-right">
-							Experience points
+							Experience points 🟢
 						</TableHead>
 					</TableRow>
 				</TableHeader>
