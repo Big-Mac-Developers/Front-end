@@ -111,7 +111,7 @@ export const Header = () => {
 				Compete with your peers in unit assignments! Organise and set
 				tasks with a kanban board! Collaborate with teammates.
 			</p>
-			<Button asChild className="mt-4">
+			<Button asChild className="mt-7 z-10 absolute">
 				<Link to={"/units"}>See your units</Link>
 			</Button>
 		</div>
