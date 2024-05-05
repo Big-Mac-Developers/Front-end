@@ -18,11 +18,17 @@ const SECTION_CONFIG = {
   done: {title: "✅ Done"},
 };
 
-export default function KanbanBoard() {
-  const {todoTasks, inProgressTasks, doneTasks, handleTaskChange} = useBoard({
-    board: mockBoard,
-  });
-
+export default function KanbanBoard({
+  todoTasks,
+  inProgressTasks,
+  doneTasks,
+  handleTaskChange,
+}: {
+  todoTasks: SubTask[];
+  inProgressTasks: SubTask[];
+  doneTasks: SubTask[];
+  handleTaskChange: (task: SubTask) => void;
+}) {
   const sections: Section[] = [
     {id: "todo", title: SECTION_CONFIG.todo.title, tasks: todoTasks},
     {

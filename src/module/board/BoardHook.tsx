@@ -1,20 +1,29 @@
-import {useState, useMemo} from "react";
+import {useState, useMemo, useEffect} from "react";
 import {Board, Section} from "@/model/board";
-import {SubTask} from "@/model/task";
+import {MainTask, SubTask, SubTaskInitial} from "@/model/task";
+import {createSubTaskService} from "@/module/task/Service";
+import {toast} from "react-toastify";
+import {todo} from "node:test";
 
 const SECTION_CONFIG = {
   todo: {title: " 📃 To do"},
   inProgress: {title: "🚀 In Progress"},
   done: {title: "✅ Done"},
 };
+type MainTaskAction = "create" | "update";
 
 export function useBoard({board}: {board: Board}) {
   //need to get subtask from main task
   // need to separate into different sections for kanban board
 
+  const [mainTasks, setMainTasks] = useState<MainTask[]>(board.tasks);
   const subtasks = useMemo(
-    () => board.tasks.flatMap((task) => task.subtasks),
-    [board.tasks]
+    () =>
+      mainTasks.flatMap((task) => {
+        return task.subtasks;
+      }),
+
+    [mainTasks]
   );
 
   const [todoTasks, setTodoTasks] = useState<SubTask[]>(
@@ -29,6 +38,49 @@ export function useBoard({board}: {board: Board}) {
     subtasks.filter((task) => task.status === "done")
   );
 
+  useEffect(() => {
+    const subtasks = mainTasks.flatMap((task) => {
+      return task.subtasks;
+    });
+    setTodoTasks(subtasks.filter((task) => task.status === "todo"));
+    setInProgressTasks(
+      subtasks.filter((task) => task.status === "in-progress")
+    );
+    setDoneTasks(subtasks.filter((task) => task.status === "done"));
+  }, [mainTasks]);
+  //   const todoTasks
+  const setSubtasks = (action: MainTaskAction) => (subtask: SubTask) => {
+    console.log(subtask);
+    console.log(mainTasks);
+    const taskIndex = mainTasks.findIndex(
+      (mainTask) => mainTask.id === subtask.main_task_id
+    );
+
+    if (taskIndex === -1) {
+      console.error("Main task not found");
+      return;
+    }
+
+    const updatedMainTasks = [...mainTasks];
+    const updatedSubtasks = [...updatedMainTasks[taskIndex].subtasks];
+
+    if (action === "create") {
+      updatedSubtasks.push(subtask);
+    } else {
+      const subtaskIndex = updatedSubtasks.findIndex(
+        (st) => st.id === subtask.id
+      );
+      if (subtaskIndex !== -1) {
+        updatedSubtasks[subtaskIndex] = subtask;
+      } else {
+        console.error("Subtask to replace not found");
+        return;
+      }
+    }
+    updatedMainTasks[taskIndex].subtasks = updatedSubtasks;
+    console.log(updatedMainTasks);
+    setMainTasks(updatedMainTasks);
+  };
   const handleTaskChange = (modifiedTask: SubTask) => {
     if (modifiedTask.status === "todo") {
       setTodoTasks((prev) =>
@@ -43,6 +95,7 @@ export function useBoard({board}: {board: Board}) {
         prev.map((task) => (task.id === modifiedTask.id ? modifiedTask : task))
       );
     }
+    setSubtasks("update")(modifiedTask);
   };
 
   const deleteTask = (task: SubTask) => {
@@ -55,5 +108,25 @@ export function useBoard({board}: {board: Board}) {
     }
   };
 
-  return {todoTasks, inProgressTasks, doneTasks, handleTaskChange};
+  const createSubTask = async (task: SubTaskInitial) => {
+    // const req = createSubTaskService(task);
+    // const res = await toast.promise(req, {
+    //   pending: "Creating task...",
+    //   success: "Task created!",
+    //   error: "Failed to create task. please try again.",
+    // });
+    // if (res.ok) {
+    //   const task = res.data as SubTask;
+    //   setSubtasks("create")(task);
+    setSubtasks("create")({...task, id: "123d3"});
+    // }
+  };
+
+  return {
+    todoTasks,
+    inProgressTasks,
+    doneTasks,
+    handleTaskChange,
+    createSubTask,
+  };
 }
