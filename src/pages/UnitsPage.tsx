@@ -73,7 +73,7 @@ export default function UnitsPage() {
 							</Button>
 							<div className="flex justify-center gap-1">
 								<span className="font-semibold">
-									Your points:
+									🟢 Your xp:
 								</span>
 								<p>{"100"}</p>
 							</div>
