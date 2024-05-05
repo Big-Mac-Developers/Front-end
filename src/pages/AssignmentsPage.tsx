@@ -24,7 +24,7 @@ export default function AssignmentsPage() {
 	}, []);
 
 	return (
-		<div className="flex flex-col gap-8 md:gap-12 md:mx-[20%] mx-4">
+		<div className="flex flex-col gap-8 md:gap-12 md:mx-[20%] mx-4 mt-10 md:mt-24">
 			<div className="flex items-center justify-between gap-4">
 				<div className="flex gap-8">
 					{unit && (

@@ -19,7 +19,7 @@ export default function KanbanPage() {
 	});
 
 	return (
-		<div className="flex flex-col gap-4 md:mx-[20%] mx-4">
+		<div className="flex flex-col gap-4 md:mx-[20%] mx-4 mt-10 md:mt-24">
 			<div className="flex flex-col gap-8 md:gap-12">
 				<div className="flex items-center justify-between">
 					<div className="flex gap-8">

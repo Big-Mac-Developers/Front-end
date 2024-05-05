@@ -7,6 +7,8 @@ import {
 	useSpring,
 	MotionValue,
 } from "framer-motion";
+import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 export const HeroParallax = ({
 	products,
@@ -101,7 +103,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
 	return (
-		<div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+		<div className="max-w-7xl relative mx-auto py-20 md:py-20 px-4 w-full left-0 top-0">
 			<h1 className="text-2xl md:text-7xl font-bold dark:text-white">
 				Big Mac <br /> Developers
 			</h1>
@@ -109,6 +111,9 @@ export const Header = () => {
 				Compete with your peers in unit assignments! Organise and set
 				tasks with a kanban board! Collaborate with teammates.
 			</p>
+			<Button asChild className="mt-4">
+				<Link to={"/units"}>See your units</Link>
+			</Button>
 		</div>
 	);
 };
