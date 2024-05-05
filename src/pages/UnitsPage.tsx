@@ -32,7 +32,10 @@ export default function UnitsPage() {
 			<div className="grid grid-cols-3 gap-4">
 				{/* Show all units */}
 				{units.map((unit) => (
-					<Card className="p-4 dark:bg-neutral-900 bg-neutral-100">
+					<Card
+						className="p-4 dark:bg-neutral-900 bg-neutral-100"
+						key={unit.id}
+					>
 						<CardHeader className="p-0 mb-4">
 							<div className="flex justify-between items-center">
 								<CardTitle className="text-lg">
@@ -45,7 +48,10 @@ export default function UnitsPage() {
 						<CardContent className="p-0 gap-4 flex flex-col">
 							{/* Show assignments for each unit*/}
 							{unit.assignments.map((assignment) => (
-								<Link to={"/kanban/" + assignment.id}>
+								<Link
+									to={"/kanban/" + assignment.id}
+									key={assignment.id}
+								>
 									<Card className="dark:hover:brightness-125 hover:brightness-[97%]">
 										<CardHeader>
 											<CardTitle className="text-lg opacity-90">
@@ -73,7 +79,7 @@ export default function UnitsPage() {
 							</Button>
 							<div className="flex justify-center gap-1">
 								<span className="font-semibold">
-									🟢 Your xp:
+									🟢 Your XP:
 								</span>
 								<p>{"100"}</p>
 							</div>

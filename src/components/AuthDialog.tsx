@@ -4,17 +4,25 @@ import { TabsTrigger, TabsList, TabsContent, Tabs } from "@/components/ui/tabs";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 export default function AuthDialog() {
 	const [isOpen, setIsOpen] = useState(false);
+	const { toast } = useToast();
 
 	const onRegisterClick = () => {
 		console.log("register");
+		toast({
+			title: "✨ Registration successful!",
+		});
 		setIsOpen(false);
 	};
 
 	const onLoginClick = () => {
 		console.log("login");
+		toast({
+			title: "✨ Login successful!",
+		});
 		setIsOpen(false);
 	};
 

@@ -4,11 +4,13 @@ import KanbanPage from "./pages/KanbanPage";
 import AssignmentsPage from "./pages/AssignmentsPage";
 import LandingPage from "./pages/LandingPage";
 import UnitsPage from "./pages/UnitsPage";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
 	return (
 		<>
 			<Nav />
+			<Toaster />
 			<div className="md:mx-[20%] mx-4">
 				<Routes>
 					<Route path="/" element={<LandingPage />} />
