@@ -1,0 +1,1058 @@
+[
+	{
+		"id": "FIT1045",
+		"title": "Intro to Programming",
+		"active": true,
+		"assignments": [
+			{
+				"id": "A1",
+				"title": "Assignment 1",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "1",
+								"title": "A1 Write introduction paragraph",
+								"description": "Write an introduction paragraph for the assignment",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							},
+							{
+								"id": "2",
+								"title": "Research",
+								"description": "Conduct research for the assignment",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							},
+							{
+								"id": "3",
+								"title": "Write conclusion",
+								"description": "Write a conclusion for the assignment",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 2 INTRO TO PROGRAMMING",
+						"description": "This is the second task of the assignment",
+						"due_date": "2024-05-15T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "4",
+								"title": "T2 Implement feature X",
+								"description": "Implement feature X according to the specifications",
+								"status": 1,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-05T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "5",
+								"title": "Test feature X",
+								"description": "Test feature X to ensure it works correctly",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-06T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "6",
+								"title": "Some new title",
+								"description": "Test feature X to ensure it works correctly",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-06T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 3 INTRO TO PROGRAMMING",
+						"description": "This is the third task of the assignment",
+						"due_date": "2024-05-20T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "6",
+								"title": "T3 Create mockups",
+								"description": "Create mockups for the user interface",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-07T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "7",
+								"title": "Gather requirements",
+								"description": "Gather requirements from stakeholders",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-08T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "8",
+								"title": "Very nice title",
+								"description": "Gather requirements from stakeholders",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-08T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "A2",
+				"title": "Assignment 2",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1 A2",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "1",
+								"title": "Write introduction paragraph",
+								"description": "Write an introduction paragraph for the assignment",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							},
+							{
+								"id": "2",
+								"title": "Research",
+								"description": "Conduct research for the assignment",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							},
+							{
+								"id": "3",
+								"title": "Write conclusion",
+								"description": "Write a conclusion for the assignment",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 2 A2",
+						"description": "This is the second task of the assignment",
+						"due_date": "2024-05-15T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "4",
+								"title": "Implement feature X",
+								"description": "Implement feature X according to the specifications",
+								"status": 1,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-05T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "5",
+								"title": "Test feature X",
+								"description": "Test feature X to ensure it works correctly",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-06T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "6",
+								"title": "Some new title",
+								"description": "Test feature X to ensure it works correctly",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-06T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 3 A2",
+						"description": "This is the third task of the assignment",
+						"due_date": "2024-05-20T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "6",
+								"title": "Create mockups A2",
+								"description": "Create mockups for the user interface",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-07T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "7",
+								"title": "Gather requirements",
+								"description": "Gather requirements from stakeholders",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-08T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "8",
+								"title": "Very nice title",
+								"description": "Gather requirements from stakeholders",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-08T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "A3",
+				"title": "Assignment 3",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1 A3",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "1",
+								"title": "Write introduction paragraph",
+								"description": "Write an introduction paragraph for the assignment",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							},
+							{
+								"id": "2",
+								"title": "Research",
+								"description": "Conduct research for the assignment",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							},
+							{
+								"id": "3",
+								"title": "Write conclusion",
+								"description": "Write a conclusion for the assignment",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-04T00:00:00.000Z",
+								"completed_date": "2024-05-04T00:00:00.000Z"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 2 A3",
+						"description": "This is the second task of the assignment",
+						"due_date": "2024-05-15T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "4",
+								"title": "Implement feature X A3",
+								"description": "Implement feature X according to the specifications",
+								"status": 1,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-05T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "5",
+								"title": "Test feature X",
+								"description": "Test feature X to ensure it works correctly",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-06T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "6",
+								"title": "Some new title",
+								"description": "Test feature X to ensure it works correctly",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-06T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 3 A3",
+						"description": "This is the third task of the assignment A3",
+						"due_date": "2024-05-20T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "6",
+								"title": "Create mockups",
+								"description": "Create mockups for the user interface",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-07T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "7",
+								"title": "Gather requirements",
+								"description": "Gather requirements from stakeholders",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-08T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "8",
+								"title": "Very nice title",
+								"description": "Gather requirements from stakeholders",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-08T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "FIT1046",
+		"title": "Data Structures",
+		"active": true,
+		"assignments": [
+			{
+				"id": "A1",
+				"title": "Assignment 1.1",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "8",
+								"title": "Implement data structures",
+								"description": "Implement various data structures",
+								"status": 1,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-09T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "9",
+								"title": "Write tests",
+								"description": "Write unit tests for the data structures",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-10T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "10",
+								"title": "New task title",
+								"description": "Write unit tests for the data structures",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-10T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 2",
+						"description": "This is the second task of the assignment",
+						"due_date": "2024-05-15T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "10",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-11T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "11",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-12T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "12",
+								"title": "Super new title",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-12T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 3",
+						"description": "This is the third task of the assignment",
+						"due_date": "2024-05-20T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "12",
+								"title": "Optimize algorithm X",
+								"description": "Optimize algorithm X for performance",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-13T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "13",
+								"title": "Write documentation",
+								"description": "Write documentation for algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-14T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "14",
+								"title": "Unique title yes",
+								"description": "Write documentation for algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-14T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "A2",
+				"title": "Assignment 2.2",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "8",
+								"title": "Implement data structures",
+								"description": "Implement various data structures",
+								"status": 1,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-09T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "9",
+								"title": "Write tests",
+								"description": "Write unit tests for the data structures",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-10T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "10",
+								"title": "New task title",
+								"description": "Write unit tests for the data structures",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-10T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 2",
+						"description": "This is the second task of the assignment",
+						"due_date": "2024-05-15T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "10",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-11T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "11",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-12T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "12",
+								"title": "Super new title",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-12T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignmedsadsant Task 3",
+						"description": "This is the third task of the assignment",
+						"due_date": "2024-05-20T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "12",
+								"title": "Optimize algorithm X",
+								"description": "Optimize algorithm X for performance",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-13T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "13",
+								"title": "Write documentation",
+								"description": "Write documentation for algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-14T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "14",
+								"title": "Unique title yes",
+								"description": "Write documentation for algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-14T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "A3",
+				"title": "Assignment 3.3",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "8",
+								"title": "Implement data structures",
+								"description": "Implement various data structures",
+								"status": 1,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-09T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "9",
+								"title": "Write tests",
+								"description": "Write unit tests for the data structures",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-10T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "10",
+								"title": "New task title",
+								"description": "Write unit tests for the data structures",
+								"status": 0,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-10T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignmendasdsadt Task 2",
+						"description": "This is the second task of the assignment",
+						"due_date": "2024-05-15T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "10",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-11T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "11",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-12T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "12",
+								"title": "Super new title",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-12T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 3",
+						"description": "This is the third task of the assignment",
+						"due_date": "2024-05-20T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "12",
+								"title": "Optimize algorithm X",
+								"description": "Optimize algorithm X for performance",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-13T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "13",
+								"title": "Write documentation",
+								"description": "Write documentation for algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-14T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "14",
+								"title": "Unique title yes",
+								"description": "Write documentation for algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-14T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "FIT1047",
+		"title": "Algorithms",
+		"assignments": [
+			{
+				"id": "A1",
+				"title": "Assignment 1.1.1",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "14",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "15",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "16",
+								"title": "Lorem ipsum cool title",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 2",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "14",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "15",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "16",
+								"title": "Im running out of words",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 3",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "14",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "15",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "16",
+								"title": "Title of id 16",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "A2",
+				"title": "Assignment 2.2.2",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "14",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "15",
+								"title": "Awesome subtask",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "16",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "14",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "15",
+								"title": "Awesome subtask",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "16",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "14",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "15",
+								"title": "Awesome subtask",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "16",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "A3",
+				"title": "Assignment 3.3.3",
+				"active": true,
+				"main_tasks": [
+					{
+						"id": 1,
+						"title": "Assignment Task 1",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "14",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "15",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "16",
+								"title": "ImplemenDFDSFDSFhm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 2,
+						"title": "Assignment Task 2",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "16",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "17",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "18",
+								"title": "wowee",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					},
+					{
+						"id": 3,
+						"title": "Assignment Task 3",
+						"description": "This is the first task of the assignment",
+						"due_date": "2024-05-10T00:00:00.000Z",
+						"status": 0,
+						"subtasks": [
+							{
+								"id": "19",
+								"title": "Analyze algorithms",
+								"description": "Analyze various algorithms",
+								"status": 0,
+								"assignee": "John Doe",
+								"assigned_date": "2024-05-15T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "20",
+								"title": "Implement algorithm X",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							},
+							{
+								"id": "21",
+								"title": "dfdsfsfdsfdsfs",
+								"description": "Implement algorithm X",
+								"status": 1,
+								"assignee": "Jane Smith",
+								"assigned_date": "2024-05-16T00:00:00.000Z",
+								"completed_date": null
+							}
+						]
+					}
+				]
+			}
+		],
+		"active": true
+	}
+]

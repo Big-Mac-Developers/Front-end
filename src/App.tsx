@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import Nav from "./components/Nav";
+import KanbanPage from "./pages/KanbanPage";
+import AssignmentsPage from "./pages/AssignmentsPage";
+import LandingPage from "./pages/LandingPage";
+import UnitsPage from "./pages/UnitsPage";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useTheme } from "@/components/theme-provider";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	const { theme } = useTheme();
+	console.log(theme);
+	return (
+		<>
+			<Nav />
+			<Toaster />
+			<Routes>
+				<Route path="/" element={<LandingPage />} />
+				<Route path="/kanban/:id" element={<KanbanPage />} />
+				<Route path="/assignments/:id" element={<AssignmentsPage />} />
+				<Route path="/units" element={<UnitsPage />} />
+			</Routes>
+			<ToastContainer position="top-right" theme={theme} />
+		</>
+	);
 }
 
-export default App
+export default App;
