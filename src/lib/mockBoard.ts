@@ -61,6 +61,7 @@ export const mockBoard: Board = {
 					main_task_id: "1",
 				},
 			],
+			point: 0,
 		},
 	],
 };

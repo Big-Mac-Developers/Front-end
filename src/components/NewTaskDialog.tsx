@@ -14,9 +14,7 @@ import { PlusIcon } from "lucide-react";
 import {
 	Select,
 	SelectContent,
-	SelectGroup,
 	SelectItem,
-	SelectLabel,
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
@@ -41,6 +39,7 @@ export function NewTaskDialog({
 			status: "todo",
 			main_task_id: maintaskid,
 		});
+		console.log(submitStatus);
 		setIsOpen(false);
 	};
 
