@@ -1,14 +1,19 @@
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Nav from "./components/Nav";
 import KanbanPage from "./pages/KanbanPage";
 import AssignmentsPage from "./pages/AssignmentsPage";
 import LandingPage from "./pages/LandingPage";
 import UnitsPage from "./pages/UnitsPage";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import {useTheme} from "@/components/theme-provider";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
-	return (
-		<>
+  const {theme} = useTheme();
+  console.log(theme);
+  return (
+<>
 			<Nav />
 			<Toaster />
 			<div className="md:mx-[20%] mx-4">
@@ -21,9 +26,13 @@ function App() {
 					/>
 					<Route path="/units" element={<UnitsPage />} />
 				</Routes>
+        
 			</div>
+       <ToastContainer position="top-right" theme={theme} />
 		</>
-	);
+  );
+
+
 }
 
 export default App;
