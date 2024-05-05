@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.react-doc-viewer {
+  background-color: white; /* Set this to any color you prefer */
+}
+
+/* Overriding the toolbar color */
+.react-doc-viewer .toolbar {
+  background-color: #f8f9fa; /* Example: a light grey background for the toolbar */
+}
