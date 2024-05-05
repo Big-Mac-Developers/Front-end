@@ -72,7 +72,7 @@ export default function KanbanBoard({
 									<div className="text-xl font-bold mb-4">
 										{section.title}
 									</div>
-									<div className="gap-2 flex flex-col">
+									<div className="gap-4 flex flex-col">
 										{section.tasks.map((task, index) => (
 											<Draggable
 												key={task.id}

@@ -29,7 +29,7 @@ export default function KanbanCard({
 	members: User[];
 	handleTaskChange: (modifiedTask: SubTask) => void;
 }) {
-	const { task, setStatus, setAssignee, setDueDate } = useTask({
+	const { task, setAssignee, setDueDate } = useTask({
 		subtask,
 		members,
 		handleTaskChange,
@@ -37,9 +37,9 @@ export default function KanbanCard({
 
 	return (
 		<Card
-			className={`active:cursor-grabbing cursor-grab dark:hover:brightness-110 hover:brightness-[97%] p-4 border-2 hover:border-black dark:hover:border-blue-500 active:border-green-500 ${
+			className={`active:cursor-grabbing cursor-grab dark:hover:brightness-150 hover:brightness-[97%] p-4 border-2  ${
 				task.due_date != null && task.due_date < new Date()
-					? "border-red-500"
+					? "border-red-400 border-opacity-70"
 					: ""
 			}`}
 		>
@@ -51,7 +51,7 @@ export default function KanbanCard({
 					{subtask.description}
 				</CardDescription>
 			</CardHeader>
-			<CardContent className="flex gap-4 p-0 items-center mt-4 justify-between">
+			<CardContent className="flex gap-4 p-0 items-center mt-4 justify-center">
 				<DatePickerWithPresets
 					date={task.due_date}
 					setDate={setDueDate}
