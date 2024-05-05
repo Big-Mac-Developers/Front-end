@@ -1,3 +1,4 @@
+import { Progress } from "./ui/progress";
 import {
 	Table,
 	TableBody,
@@ -8,80 +9,89 @@ import {
 } from "./ui/table";
 
 export default function LeaderBoard() {
-	const invoices = [
+	const teams = [
 		{
-			invoice: "INV001",
+			invoice: "1",
 			paymentStatus: "Paid",
-			totalAmount: "$250.00",
+			totalAmount: "80",
 			paymentMethod: "Credit Card",
 		},
 		{
-			invoice: "INV002",
+			invoice: "2",
 			paymentStatus: "Pending",
-			totalAmount: "$150.00",
+			totalAmount: "55",
 			paymentMethod: "PayPal",
 		},
 		{
-			invoice: "INV003",
+			invoice: "3",
 			paymentStatus: "Unpaid",
-			totalAmount: "$350.00",
+			totalAmount: "30",
 			paymentMethod: "Bank Transfer",
 		},
 		{
-			invoice: "INV004",
+			invoice: "4",
 			paymentStatus: "Paid",
-			totalAmount: "$450.00",
+			totalAmount: "60",
 			paymentMethod: "Credit Card",
 		},
 		{
-			invoice: "INV005",
+			invoice: "5",
 			paymentStatus: "Paid",
-			totalAmount: "$550.00",
+			totalAmount: "20",
 			paymentMethod: "PayPal",
 		},
 		{
-			invoice: "INV006",
+			invoice: "6",
 			paymentStatus: "Pending",
-			totalAmount: "$200.00",
+			totalAmount: "30",
 			paymentMethod: "Bank Transfer",
 		},
 		{
-			invoice: "INV007",
+			invoice: "7",
 			paymentStatus: "Unpaid",
-			totalAmount: "$300.00",
+			totalAmount: "80",
 			paymentMethod: "Credit Card",
 		},
 	];
 
 	return (
-		<>
-			<h1 className="md:text-4xl text-2xl font-bold text-nowrap">
-				{"🏅 Leaderboard"}
-			</h1>
+		<div className="flex flex-col gap-4">
+			<div className="flex justify-between items-center">
+				<h1 className="md:text-4xl text-2xl font-bold text-nowrap">
+					{"🏅 Leaderboard"}
+				</h1>
+				<h2 className="md:text-2xl text-xl font-bold text-nowrap opacity-90">
+					Your Rank: 2
+				</h2>
+			</div>
 			<Table>
 				<TableHeader>
 					<TableRow>
-						<TableHead className="w-[100px]">Rank</TableHead>
-						<TableHead>Status</TableHead>
-						<TableHead>Method</TableHead>
-						<TableHead className="text-right">Amount</TableHead>
+						<TableHead>Rank</TableHead>
+						<TableHead>Name</TableHead>
+						<TableHead className="text-right">
+							Experience points
+						</TableHead>
 					</TableRow>
 				</TableHeader>
 				<TableBody>
-					{invoices.map((invoice) => (
-						<TableRow key={invoice.invoice}>
+					{teams.map((team) => (
+						<TableRow key={team.invoice}>
 							<TableCell className="font-medium">
-								{invoice.invoice}
+								{team.invoice}
 							</TableCell>
-							<TableCell>{invoice.paymentStatus}</TableCell>
-							<TableCell>{invoice.paymentMethod}</TableCell>
-							<TableCell className="text-right">
-								{invoice.totalAmount}
+							<TableCell>{team.paymentStatus}</TableCell>
+							<TableCell className="flex justify-end gap-4">
+								<Progress
+									value={Number(team.totalAmount)}
+									className="w-[60%]"
+								/>
+								<p>{team.totalAmount}/100</p>
 							</TableCell>
 						</TableRow>
 					))}
 				</TableBody>
 			</Table>
-		</>
+		</div>
 	);
 }
