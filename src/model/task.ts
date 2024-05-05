@@ -6,6 +6,7 @@ interface MainTaskInitial {
     due_date: Date
     status: Status
     board_id: number
+    point: number
 }
 
 export interface MainTask extends MainTaskInitial {
