@@ -6,7 +6,7 @@
 		"assignments": [
 			{
 				"id": "A1",
-				"title": "Assignment 1 INTRO TO PROGRAMMING",
+				"title": "Assignment 1",
 				"active": true,
 				"main_tasks": [
 					{
@@ -358,7 +358,7 @@
 		"assignments": [
 			{
 				"id": "A1",
-				"title": "Assignment 1",
+				"title": "Assignment 1.1",
 				"active": true,
 				"main_tasks": [
 					{
@@ -473,7 +473,7 @@
 			},
 			{
 				"id": "A2",
-				"title": "Assignment sadasdas2",
+				"title": "Assignment 2.2",
 				"active": true,
 				"main_tasks": [
 					{
@@ -588,7 +588,7 @@
 			},
 			{
 				"id": "A3",
-				"title": "Assignment 3",
+				"title": "Assignment 3.3",
 				"active": true,
 				"main_tasks": [
 					{
@@ -709,7 +709,7 @@
 		"assignments": [
 			{
 				"id": "A1",
-				"title": "Assignment 1",
+				"title": "Assignment 1.1.1",
 				"active": true,
 				"main_tasks": [
 					{
@@ -824,7 +824,7 @@
 			},
 			{
 				"id": "A2",
-				"title": "Assignmdsadasent 2",
+				"title": "Assignment 2.2.2",
 				"active": true,
 				"main_tasks": [
 					{
@@ -939,7 +939,7 @@
 			},
 			{
 				"id": "A3",
-				"title": "Assignment 3",
+				"title": "Assignment 3.3.3",
 				"active": true,
 				"main_tasks": [
 					{

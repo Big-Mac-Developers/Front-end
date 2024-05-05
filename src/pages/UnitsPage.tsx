@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 import newDummyData from "../lib/newDummyData.json";
 import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button";
 
 export default function UnitsPage() {
 	const [units, setUnits] = useState<Unit[]>([]);
@@ -30,24 +31,49 @@ export default function UnitsPage() {
 				</div>
 			</div>
 			<div className="grid grid-cols-3 gap-4">
+				{/* Show all units */}
 				{units.map((unit) => (
-					<Link to={"/assignments/" + unit.id} key={unit.id}>
-						<Card className="dark:hover:brightness-110 hover:brightness-[97%] p-4 dark:bg-neutral-900 bg-neutral-100">
-							<CardHeader className="p-0 mb-4">
+					<Card className="p-4 dark:bg-neutral-900 bg-neutral-100">
+						<CardHeader className="p-0 mb-4">
+							<div className="flex justify-between items-center">
 								<CardTitle className="text-lg">
 									{unit.title}
 								</CardTitle>
-							</CardHeader>
-							<CardContent className="p-0 opacity-80">
-								<div className="text-sm">
-									<span className="font-semibold">
-										Status:{" "}
-									</span>{" "}
-									{unit.active ? "Active" : "Inactive"}
-								</div>
-							</CardContent>
-						</Card>
-					</Link>
+								<NewAssignmentDialog />
+							</div>
+						</CardHeader>
+
+						<CardContent className="p-0 gap-4 flex flex-col">
+							{/* Show assignments for each unit*/}
+							{unit.assignments.map((assignment) => (
+								<Link to={"/kanban/" + assignment.id}>
+									<Card className="dark:hover:brightness-125 hover:brightness-[97%]">
+										<CardHeader>
+											<CardTitle className="text-lg opacity-90">
+												{assignment.title}
+											</CardTitle>
+										</CardHeader>
+										<CardContent>
+											<div className="text-sm opacity-70">
+												<span className="font-semibold">
+													Status:{" "}
+												</span>{" "}
+												{assignment.active
+													? "Active"
+													: "Inactive"}
+											</div>
+										</CardContent>
+									</Card>
+								</Link>
+							))}
+
+							<Button asChild>
+								<Link to={"/assignments/" + unit.id}>
+									Leaderboard
+								</Link>
+							</Button>
+						</CardContent>
+					</Card>
 				))}
 			</div>
 		</div>
