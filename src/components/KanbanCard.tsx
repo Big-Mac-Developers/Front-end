@@ -37,11 +37,7 @@ export default function KanbanCard({
 
 	return (
 		<Card
-			className={`active:cursor-grabbing cursor-grab dark:hover:brightness-150 hover:brightness-[97%] p-4 border-2  ${
-				task.due_date != null && task.due_date < new Date()
-					? "border-red-400 border-opacity-70"
-					: ""
-			}`}
+			className={`active:cursor-grabbing cursor-grab dark:hover:brightness-150 hover:brightness-[97%] p-4 border-2`}
 		>
 			<CardHeader className="flex items-center p-0">
 				<div className="flex-grow flex items-center space-x-2">
