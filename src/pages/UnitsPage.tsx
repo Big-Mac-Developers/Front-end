@@ -9,7 +9,6 @@ import {
 import { Link } from "react-router-dom";
 import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 import newDummyData from "../lib/newDummyData.json";
-import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 
 export default function UnitsPage() {
@@ -72,6 +71,12 @@ export default function UnitsPage() {
 									Leaderboard
 								</Link>
 							</Button>
+							<div className="flex justify-center gap-1">
+								<span className="font-semibold">
+									Your points:
+								</span>
+								<p>{"100"}</p>
+							</div>
 						</CardContent>
 					</Card>
 				))}

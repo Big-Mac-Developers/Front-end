@@ -10,7 +10,6 @@ import { Link, useParams } from "react-router-dom";
 import { NewAssignmentDialog } from "@/components/NewAssignmentDialog.tsx";
 import newDummyData from "../lib/newDummyData.json";
 import { Separator } from "@/components/ui/separator";
-import { Progress } from "@/components/ui/progress";
 import LeaderBoard from "@/components/Leaderboard";
 
 export default function AssignmentsPage() {
@@ -35,7 +34,6 @@ export default function AssignmentsPage() {
 					)}
 					<NewAssignmentDialog />
 				</div>
-				<Progress value={66} className="w-[40%] mt-2" />
 			</div>
 			<div className="grid grid-cols-3 gap-4">
 				{assignments.map((assignment) => (
