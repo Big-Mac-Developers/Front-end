@@ -14,3 +14,10 @@ export interface Section {
 
     tasks: SubTask[];
 }
+
+export interface BoardInitail {
+    title: string
+    description: string
+
+
+}
