@@ -19,7 +19,7 @@ export default function KanbanPage() {
 		board: mockBoard,
 	});
 
-	const progressValue = todoTasks.subta;
+	// const progressValue = todoTasks.subta;
 
 	return (
 		<div className="flex flex-col gap-4 md:mx-[20%] mx-4 mt-10 md:mt-24">
