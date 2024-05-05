@@ -13,7 +13,7 @@ export default function Nav() {
 					</Link>
 				</Button>
 				<Button variant="link" asChild>
-					<Link to="/units">Your Units</Link>
+					<Link to="/units">Your Quests</Link>
 				</Button>
 			</nav>
 

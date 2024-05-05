@@ -24,7 +24,7 @@ export default function UnitsPage() {
 			<div className="flex items-center justify-between">
 				<div className="flex gap-8">
 					<h1 className="md:text-4xl text-2xl font-bold">
-						📖 Your Units
+						🗡️ Your Quests
 					</h1>
 					<NewAssignmentDialog />
 				</div>
