@@ -19,19 +19,32 @@ export default function KanbanPage() {
 		board: mockBoard,
 	});
 
-	// const progressValue = todoTasks.subta;
+	const points =
+		(doneTasks.length /
+			(todoTasks.length + inProgressTasks.length + doneTasks.length)) *
+		100;
 
 	return (
-		<div className="flex flex-col gap-4 md:mx-[20%] mx-4 mt-10 md:mt-24">
+		<div className="flex flex-col gap-4 lg:mx-[20%] mx-4 mt-10 md:mt-24">
 			<div className="flex flex-col gap-8 md:gap-12">
-				<div className="flex items-center justify-between">
-					<div className="flex gap-8">
-						<h1 className="md:text-4xl text-2xl font-bold">
+				<div className="flex items-center justify-between gap-4">
+					<div className="flex gap-8 items-center">
+						<h1 className="md:text-4xl text-2xl font-bold text-nowrap">
 							{"✨ Assignment " + id}
 						</h1>
 						<NewTaskDialog
 							createSubTaskFunc={createSubTask}
 							MainTasks={mockBoard.tasks}
+						/>
+					</div>
+					<div className="flex justify-center gap-2 text-lg border rounded-lg p-2 items-center">
+						<p className="text-nowrap">
+							🟢 Your Experience Points:
+						</p>
+						<p className="font-semibold">{points}</p>
+						<Progress
+							value={points}
+							className="md:w-[7rem] lg:w-[15rem] md:flex hidden "
 						/>
 					</div>
 				</div>
@@ -42,7 +55,6 @@ export default function KanbanPage() {
 					doneTasks={doneTasks}
 				/>
 			</div>
-			{/* <Progress value={} /> */}
 		</div>
 	);
 }
