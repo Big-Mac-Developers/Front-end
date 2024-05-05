@@ -8,7 +8,7 @@ export default function Nav() {
 	return (
 		<header className="flex items-center justify-between px-4 md:px-[12.5%] border-b py-3 flex-wrap gap-4">
 			<nav className="flex items-center gap-x-1 md:gap-x-6 flex-wrap">
-				<Button size="icon" variant="ghost">
+				<Button size="icon" variant="ghost" asChild>
 					<Link to="/">
 						<KanbanIcon />
 					</Link>
