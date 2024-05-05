@@ -34,6 +34,7 @@ export default function KanbanBoard({
 		},
 		{ id: "done", title: SECTION_CONFIG.done.title, tasks: doneTasks },
 	];
+
 	const onDragEnd = (result: DropResult) => {
 		if (!result.destination) return;
 		const { source, destination } = result;

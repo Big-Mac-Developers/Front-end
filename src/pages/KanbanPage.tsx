@@ -4,6 +4,7 @@ import { NewTaskDialog } from "@/components/NewTaskDialog";
 import { useParams } from "react-router-dom";
 import { useBoard } from "@/module/board/BoardHook";
 import { mockBoard } from "@/lib/mockBoard";
+import { Progress } from "@/components/ui/progress";
 
 export default function KanbanPage() {
 	const { id } = useParams();
@@ -17,6 +18,8 @@ export default function KanbanPage() {
 	} = useBoard({
 		board: mockBoard,
 	});
+
+	const progressValue = todoTasks.subta;
 
 	return (
 		<div className="flex flex-col gap-4 md:mx-[20%] mx-4 mt-10 md:mt-24">
@@ -39,6 +42,7 @@ export default function KanbanPage() {
 					doneTasks={doneTasks}
 				/>
 			</div>
+			<Progress value={} />
 		</div>
 	);
 }

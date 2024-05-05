@@ -41,7 +41,7 @@ export default function KanbanCard({
 		>
 			<CardHeader className="flex items-center p-0">
 				<div className="flex-grow flex items-center space-x-2">
-					<CardTitle className="text-sm">{task.title}</CardTitle>
+					<CardTitle className="text-md">{task.title}</CardTitle>
 				</div>
 				<CardDescription className="flex-grow">
 					{subtask.description}
