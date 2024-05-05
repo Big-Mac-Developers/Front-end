@@ -6,7 +6,7 @@ The aim is to promote competition and hence productivity among students.
 
 <img src="https://imgur.com/UnpscDa.png" width="825" />
 <img src="https://imgur.com/djy2jf1.png" width="825" />
-<img src="https://imgur.com/vdWOfuZ.png" width="825" />
+<img src="https://imgur.com/GPiNnUw.png" width="825" />
 
 ## Installation
 
