@@ -12,3 +12,17 @@ export async function updateSubTask(subtaskId: string, status: Status) {
   });
   return res
 }
+
+export async function createSubTaskService(subtask: SubTaskInitial) {
+  console.log(subtask);
+  const req = fetch("http://localhost:8000/task/createSub", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json",
+      cors: "no-cors",
+    },
+    body: JSON.stringify(subtask),
+  });
+  return req;
+}
